@@ -15,7 +15,7 @@ export default function Home() {
             Ho completato con successo numerosi progetti per aziende e privati,
             offrendo competenze tecniche avanzate e un approccio orientato ai
             risultati. Mi specializzo nello sviluppo di siti web, e-commerce e
-            applicazioni web, garantendo un design funzionale e un'esperienza
+            applicazioni web, garantendo un design funzionale e un&apos;esperienza
             utente ottimale. Grazie alla mia esperienza in digital marketing e
             SEO, aiuto i clienti a migliorare la loro visibilità online e a
             raggiungere il loro pubblico di riferimento in modo efficace. Sempre
