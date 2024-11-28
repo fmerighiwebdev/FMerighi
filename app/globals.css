@@ -30,14 +30,18 @@
   --fw-900: 900;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100dvh;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  margin: 0 !important;
 }
 
-body {
-  text-align: center;
+p {
+  font-family: var(--body-font);
+  margin: 0 !important;
+}
+
+ul {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
 }

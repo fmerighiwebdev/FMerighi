@@ -1,7 +1,9 @@
+import Header from "./components/header/header";
 import "./globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const metadata = {
-  title: "FMerighi - Sviluppatore Web / Software - Rovereto",
+  title: "Francesco Merighi - Sviluppatore Web / Software a Rovereto",
   description:
     "Sviluppatore Web e Software a Rovereto (TN). Esperto in sviluppo di siti web, applicazioni web e soluzioni digitali personalizzate per aziende e startup. Scopri come posso aiutarti a creare esperienze digitali innovative e di impatto.",
 };
@@ -26,7 +28,10 @@ export default function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-title" content="FMerighi" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
