@@ -53,6 +53,8 @@
   padding: 0.5rem 1.5rem;
   border: 2px solid var(--primary-color);
   transition: all 0.3s;
+  width: 250px;
+  text-align: center;
 }
 
 .heroCta a.primaryBtn {
@@ -101,6 +103,12 @@
 
 .shapeHero path {
     fill: #6BC0BC80;
+}
+
+@media screen and (max-width: 768px) {
+    .heroCta {
+      flex-direction: column;
+    }
 }
 
 @keyframes fadeInFromBottom {

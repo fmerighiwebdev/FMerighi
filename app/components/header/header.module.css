@@ -7,6 +7,13 @@
     background-color: var(--neutral-light);
     padding: 1rem 0;
     animation: fadeInFromTop 0.5s ease-in-out forwards;
+    transition: all .3s ease-in-out;
+}
+
+.header.scrolled {
+    background-color: var(--neutral-light);
+    padding: 0.5rem 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav {
@@ -19,6 +26,9 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navList a {
@@ -46,6 +56,33 @@
 
 .navList a:hover::after {
     width: 100%;
+}
+
+.hamburgerMenu {
+    display: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.hamburgerLine {
+    width: 30px;
+    height: 3px;
+    background-color: var(--neutral-dark);
+    transition: all 0.3s;
+}
+
+.hamburgerLine + .hamburgerLine {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburgerMenu {
+        display: block;
+    }
+
+    .navList {
+        display: none;
+    }
 }
 
 @keyframes fadeInFromTop {
