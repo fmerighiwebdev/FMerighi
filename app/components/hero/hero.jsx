@@ -9,8 +9,8 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className="container">
-        <div className={`row ${styles.heroColumns} gap-5 gap-md-0`}>
-          <div className="col-12 col-md-6">
+        <div className={`row ${styles.heroColumns} gap-4 gap-md-0`}>
+          <div className="col-12 col-md-6 order-1 order-md-0">
             <div className={styles.heroContent}>
               <h1>Francesco Merighi</h1>
               <h2>Sviluppatore Web FS</h2>

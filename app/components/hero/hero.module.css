@@ -106,8 +106,13 @@
 }
 
 @media screen and (max-width: 768px) {
+    .heroCta a {
+        width: 200px;
+        font-size: 1rem;
+    }
+
     .heroCta {
-      flex-direction: column;
+        gap: .75rem;
     }
 
     .heroColumns {
