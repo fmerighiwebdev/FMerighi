@@ -13,7 +13,7 @@ export default function Hero() {
           <div className="col-12 col-md-6">
             <div className={styles.heroContent}>
               <h1>Francesco Merighi</h1>
-              <h2>Sviluppatore Web / Software FS</h2>
+              <h2>Sviluppatore Web FS</h2>
             </div>
             <div className={styles.heroCta}>
               <Link className={styles.primaryBtn} href="#about">

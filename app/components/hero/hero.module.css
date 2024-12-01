@@ -109,6 +109,10 @@
     .heroCta {
       flex-direction: column;
     }
+
+    .heroColumns {
+      width: auto;
+    }
 }
 
 @keyframes fadeInFromBottom {
