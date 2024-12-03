@@ -81,52 +81,59 @@
 .heroPfp img {
   width: clamp(9.375rem, 5.893rem + 14.286vw, 18.75rem);
   height: clamp(9.375rem, 5.893rem + 14.286vw, 18.75rem);
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.heroPfp img:hover {
+  transform: scale(1.1);
 }
 
 .shapeHero {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .shapeHero svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: clamp(5rem, 3.375rem + 6.667vw, 9.375rem);
-    animation: fadeInFromBottom 0.5s ease-in-out forwards;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: clamp(5rem, 3.375rem + 6.667vw, 9.375rem);
+  animation: fadeInFromBottom 0.5s ease-in-out forwards;
 }
 
 .shapeHero path {
-    fill: #6BC0BC80;
+  fill: #6bc0bc80;
 }
 
 @media screen and (max-width: 768px) {
-    .heroCta a {
-        width: 200px;
-        font-size: 1rem;
-    }
+  .heroCta a {
+    width: 200px;
+    font-size: 1rem;
+  }
 
-    .heroCta {
-        gap: .75rem;
-    }
+  .heroCta {
+    gap: 0.75rem;
+  }
 
-    .heroColumns {
-      width: auto;
-    }
+  .heroColumns {
+    width: auto;
+  }
 }
 
 @keyframes fadeInFromBottom {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

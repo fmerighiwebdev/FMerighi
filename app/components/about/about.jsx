@@ -2,16 +2,16 @@ import styles from "./about.module.css";
 
 import Image from "next/image";
 
-import codeIcon from "../../../assets/code.svg";
-import handshakeIcon from "../../../assets/handshake.svg";
-import starIcon from "../../../assets/star.svg";
-import bullsEyeIcon from "../../../assets/bullseye.svg";
+import codeIcon from "@/assets/code.svg";
+import handshakeIcon from "@/assets/handshake.svg";
+import starIcon from "@/assets/star.svg";
+import bullsEyeIcon from "@/assets/bullseye.svg";
 import TechList from "../tech-list/tech-list";
 
 export default function About() {
   return (
     <section className={styles.about} id="about">
-      <h2>About me</h2>
+      <h2 className={styles.sectionTitle}>About me</h2>
       <div className="container">
         <p className={styles.aboutIntroText}>
           Mi chiamo Francesco Merighi, vivo a Rovereto (TN) e sono uno{" "}
@@ -37,7 +37,7 @@ export default function About() {
                   l&apos;esperienza di acquisto e aumentare le conversioni.
                 </li>
                 <li>
-                  <span>Applicazioni web</span>, scalabili e pensate per
+                  <span>Applicazioni web e mobile</span>, scalabili e pensate per
                   rispondere a esigenze specifiche.
                 </li>
               </ul>

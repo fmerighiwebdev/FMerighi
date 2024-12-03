@@ -32,8 +32,6 @@ export default function Header() {
           <Image
             src={fmLogo}
             alt="Francesco Merighi - Sviluppatore Web a Rovereto (TN)"
-            width={65}
-            height={65}
           />
           <ul className={styles.navList}>
             <li>

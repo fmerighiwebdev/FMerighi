@@ -5,7 +5,7 @@
     width: 100%;
     z-index: 1000;
     background-color: var(--neutral-light);
-    padding: 1rem 0;
+    padding: .75rem 0;
     animation: fadeInFromTop 0.5s ease-in-out forwards;
     transition: all .3s ease-in-out;
 }
@@ -14,6 +14,18 @@
     background-color: var(--neutral-light);
     padding: 0.5rem 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+    width: 60px;
+    height: 60px;
+    transition: all .3s ease-in-out;
+}
+
+.header.scrolled img {
+    transition: all .3s ease-in-out;
+    width: 50px;
+    height: 50px;
 }
 
 .nav {

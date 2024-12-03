@@ -1,6 +1,6 @@
 import styles from "./hero.module.css";
 import profileIcon from "../../../assets/default-pfp.svg";
-
+import profilePhoto from "../../../assets/unnamed-_1_.webp";
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -25,10 +25,10 @@ export default function Hero() {
             </div>
           </div>
           <div className={`col-12 col-md-6 ${styles.heroPfp}`}>
-            <Image src={profileIcon} alt="Francesco Merighi" />
+            <Image src={profilePhoto} alt="Francesco Merighi" />
           </div>
         </div>
-        <div className={styles.shapeHero}>
+        {/* <div className={styles.shapeHero}>
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ export default function Hero() {
               className="shape-fill"
             ></path>
           </svg>
-        </div>
+        </div> */}
       </div>
     </section>
   );
