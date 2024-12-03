@@ -40,6 +40,10 @@ li {
   margin: 0 !important;
 }
 
+p {
+  font-family: var(--body-font);
+}
+
 span {
     color: var(--primary-color);
     font-weight: var(--fw-700);

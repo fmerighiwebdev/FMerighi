@@ -83,6 +83,7 @@
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 30px;
+    font-size: clamp(0.875rem, 0.829rem + 0.19vw, 1rem);
     font-weight: var(--fw-500);
 }
 
