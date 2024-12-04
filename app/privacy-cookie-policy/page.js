@@ -7,7 +7,7 @@ export default function PrivacyCookiePolicyPage() {
       <div className="container">
         <section className={styles["privacy-header"]}>
           <h1>Privacy e Cookie Policy</h1>
-          <p>
+          <p className="mt-4 text-secondary">
             <em>Ultimo aggiornamento: 23/10/2024</em>
           </p>
           <p>

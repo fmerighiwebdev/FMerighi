@@ -1,3 +1,4 @@
+import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
