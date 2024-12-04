@@ -37,6 +37,7 @@
     text-decoration: none;
     border: 1px solid var(--primary-color);
     padding: 0.5rem 1rem;
+    font-family: var(--body-font);
 }
 
 .workCard {
@@ -97,6 +98,7 @@
     text-decoration: none;
     width: fit-content;
     position: relative;
+    font-family: var(--body-font);
 }
 
 .workLink::after {

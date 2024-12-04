@@ -29,15 +29,22 @@ export default function Portfolio() {
                     <li key={index}>{tech}</li>
                   ))}
                 </ul>
-                <a
-                  href={work.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={styles.workLink}
-                >
-                  Visita il sito
-                  <Image src={rarrIcon} alt="Freccia" width={20} height={20} />
-                </a>
+                {work.url && (
+                  <a
+                    href={work.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.workLink}
+                  >
+                    Visita il sito
+                    <Image
+                      src={rarrIcon}
+                      alt="Freccia"
+                      width={20}
+                      height={20}
+                    />
+                  </a>
+                )}
               </div>
             </div>
           ))}
