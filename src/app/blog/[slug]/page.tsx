@@ -10,6 +10,11 @@ import {
   Text,
 } from "@/once-ui/components";
 import { formatDate } from "@/app/utils/formatDate";
+import { Metadata } from "next";
+
+interface PageProps {
+  params: { slug: string };
+}
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const posts = getPosts(["src", "app", "blog", "posts"]);
@@ -18,9 +23,13 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
   }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const pageParams = await params;
+  const slug = pageParams.slug;
   const post = getPosts(["src", "app", "blog", "posts"]).find(
-    (post) => post.slug === params.slug
+    (post) => post.slug === slug
   );
 
   if (!post) {
@@ -29,14 +38,15 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 
   return {
     title: post.metadata.title,
-    description: post.metadata.summary,
-    image: post.metadata.image,
+    description: post.metadata.summary
   };
 }
 
-export default function Blog({ params }: { params: { slug: string } }) {
+export default async function Blog({ params }: PageProps) {
+  const pageParams = await params;
+  const slug = pageParams.slug;
   const post = getPosts(["src", "app", "blog", "posts"]).find(
-    (post) => post.slug === params.slug
+    (post) => post.slug === slug
   );
 
   if (!post) {
