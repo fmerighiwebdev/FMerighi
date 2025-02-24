@@ -22,10 +22,7 @@ export async function generateMetadata({ params }: BlogParams) {
   );
 
   if (!post) {
-    return {
-      title: "Post not found",
-      description: "",
-    };
+    notFound();
   }
 
   return {
