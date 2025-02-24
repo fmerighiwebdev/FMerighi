@@ -37,6 +37,8 @@ export default async function Blog({ params }: BlogParams) {
     (post) => post.slug === slug
   );
 
+  console.log(post);
+
   if (!post) {
     notFound();
   }
