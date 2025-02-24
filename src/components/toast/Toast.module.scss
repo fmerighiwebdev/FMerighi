@@ -1,0 +1,25 @@
+.toast {
+    width: min(500px, 100%);
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadeInFromBottomBounce 0.5s ease-in-out;
+}
+
+@keyframes fadeInFromBottomBounce {
+    0% {
+        transform: translateX(-50%) translateY(100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10%);
+        opacity: 1;
+    }
+    75% {
+        transform: translateX(-50%) translateY(5%);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}
