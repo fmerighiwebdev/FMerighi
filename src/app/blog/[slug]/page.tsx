@@ -1,16 +1,15 @@
 import { notFound } from "next/navigation";
 import { CustomMDX } from "@/components/mdx";
 import { getPosts } from "@/app/utils/utils";
-import { AvatarGroup, Button, Column, Heading, Row, Text } from "@/once-ui/components";
-import { baseURL } from "@/app/resources";
-import { person } from "@/app/resources/content";
+import {
+  AvatarGroup,
+  Button,
+  Column,
+  Heading,
+  Row,
+  Text,
+} from "@/once-ui/components";
 import { formatDate } from "@/app/utils/formatDate";
-
-interface BlogParams {
-  params: {
-    slug: string;
-  };
-}
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const posts = getPosts(["src", "app", "blog", "posts"]);
@@ -19,8 +18,10 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
   }));
 }
 
-export function generateMetadata({ params: { slug } }: BlogParams) {
-  const post = getPosts(["src", "app", "blog", "posts"]).find((post) => post.slug === slug);
+export function generateMetadata({ params }: { params: { slug: string } }) {
+  const post = getPosts(["src", "app", "blog", "posts"]).find(
+    (post) => post.slug === params.slug
+  );
 
   if (!post) {
     notFound();
@@ -33,8 +34,10 @@ export function generateMetadata({ params: { slug } }: BlogParams) {
   };
 }
 
-export default function Blog({ params }: BlogParams) {
-  let post = getPosts(["src", "app", "blog", "posts"]).find((post) => post.slug === params.slug);
+export default function Blog({ params }: { params: { slug: string } }) {
+  const post = getPosts(["src", "app", "blog", "posts"]).find(
+    (post) => post.slug === params.slug
+  );
 
   if (!post) {
     notFound();
@@ -47,7 +50,13 @@ export default function Blog({ params }: BlogParams) {
 
   return (
     <Column as="section" maxWidth="xs" gap="l">
-      <Button href="/blog" weight="default" variant="tertiary" size="s" prefixIcon="chevronLeft">
+      <Button
+        href="/blog"
+        weight="default"
+        variant="tertiary"
+        size="s"
+        prefixIcon="chevronLeft"
+      >
         Posts
       </Button>
       <Heading variant="display-strong-s">{post.metadata.title}</Heading>
