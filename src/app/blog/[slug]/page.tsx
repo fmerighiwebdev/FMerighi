@@ -19,7 +19,7 @@ interface PageProps {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params;
   const post = getPosts(["src", "app", "blog", "posts"]).find(
     (post) => post.slug === slug
   );
@@ -35,7 +35,7 @@ export async function generateMetadata({
 }
 
 export default async function Blog({ params }: PageProps) {
-  const { slug } = params;
+  const { slug } = await params;
   const post = getPosts(["src", "app", "blog", "posts"]).find(
     (post) => post.slug === slug
   );
