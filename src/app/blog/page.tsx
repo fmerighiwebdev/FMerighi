@@ -4,9 +4,10 @@ import { Posts } from "@/components/blog/Posts";
 import { blog, newsletter } from "@/app/resources/content";
 
 export const metadata = {
-  title: "Francesco Merighi - Blog",
-  description: "Articoli, guide e tutorial su sviluppo web, programmazione e tecnologia.",
-}
+  title: "Blog - Francesco Merighi",
+  description:
+    "Articoli, guide e tutorial su sviluppo web, programmazione e tecnologia.",
+};
 
 export default function Blog() {
   return (

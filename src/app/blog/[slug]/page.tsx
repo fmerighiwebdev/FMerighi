@@ -16,20 +16,11 @@ interface PageProps {
   params: { slug: string };
 }
 
-export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const posts = getPosts(["src", "app", "blog", "posts"]);
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
-}
-
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const pageParams = await params;
-  const slug = pageParams.slug;
   const post = getPosts(["src", "app", "blog", "posts"]).find(
-    (post) => post.slug === slug
+    (post) => post.slug === params.slug
   );
 
   if (!post) {
@@ -38,7 +29,7 @@ export async function generateMetadata({
 
   return {
     title: post.metadata.title,
-    description: post.metadata.summary
+    description: post.metadata.summary,
   };
 }
 

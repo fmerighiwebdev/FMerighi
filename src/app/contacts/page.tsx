@@ -3,7 +3,7 @@ import { contacts } from "@/app/resources/content";
 import ContactForm from "@/components/contact-form/contact-form";
 
 export const metadata = {
-  title: "Francesco Merighi - Contatti",
+  title: "Contatti - Francesco Merighi",
   description:
     "Aperto a nuove collaborazioni, progetti freelance e occasioni professionali. Contattami compilando il modulo o scrivimi via email.",
 };
