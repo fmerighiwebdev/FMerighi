@@ -1,8 +1,9 @@
 .toast {
-    width: min(500px, 100%);
+    width: min(500px, 90%);
     position: fixed;
     bottom: 3rem;
     left: 50%;
+    z-index: 999;
     transform: translateX(-50%);
     animation: fadeInFromBottomBounce 0.5s ease-in-out;
 }

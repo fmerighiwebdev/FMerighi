@@ -16,7 +16,7 @@ const icons = {
 export default function Toast({ message, variant }: ToastProps) {
   return createPortal(
     <div
-      className={`display-flex align-center px-20 py-20 surface-background neutral-border-medium border-solid border-1 radius-l shadow-md z-50 ${styles.toast}`}
+      className={`display-flex align-center px-20 py-20 surface-background neutral-border-medium border-solid border-1 radius-l shadow-md ${styles.toast}`}
     >
       <Image src={icons[variant]} alt={variant} width={24} height={24} className="mr-16" />
       <span>{message}</span>
