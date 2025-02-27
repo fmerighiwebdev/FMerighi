@@ -486,14 +486,6 @@ const about = {
   },
 };
 
-const blog = {
-  label: "Blog",
-  title: "Tips, Tricks & Dev Life – Il Mio Spazio Web",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
-};
-
 const contacts = {
   label: "Contatti",
   title: "Contattami",
@@ -509,4 +501,4 @@ const contacts = {
   },
 };
 
-export { person, social, newsletter, home, about, blog, contacts };
+export { person, social, newsletter, home, about, contacts };
