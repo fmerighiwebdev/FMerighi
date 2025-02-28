@@ -26,6 +26,145 @@ const ListItem = ({ children }) => (
 
 export const posts = [
   {
+    title: "UI/UX nel 2025: Le nuove tendenze che devi conoscere",
+    short_description:
+      "L’evoluzione del design UI/UX è inarrestabile e nel 2025 vedremo nuove tendenze che ridefiniranno l’esperienza utente sul web e nelle app.",
+    date: "Mar 01, 2025",
+    content: (
+      <>
+        {/* OGNI SEZIONE è SEPARATA DA 32 PX di GAP */}
+        <Description>
+          L&apos;evoluzione del design UI/UX è inarrestabile e nel 2025 vedremo
+          nuove tendenze che ridefiniranno l&apos;esperienza utente sul web e
+          nelle app. Con l&apos;avanzamento dell&apos;intelligenza artificiale,
+          il minimalismo funzionale e la crescente importanza
+          dell&apos;accessibilità, è essenziale per i designer e sviluppatori
+          rimanere aggiornati. Vediamo insieme le principali novità!
+        </Description>
+        <Line background="neutral-alpha-strong" />
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            AI-Driven UX: Personalizzazione Intelligente
+          </Heading>
+          <Description>
+            L&apos;<strong>intelligenza artificiale</strong> avrà un ruolo
+            sempre più centrale nella progettazione UX. Gli algoritmi saranno in
+            grado di adattare le interfacce in tempo reale in base alle
+            abitudini e preferenze degli utenti, offrendo un&apos;esperienza
+            sempre più personalizzata.
+          </Description>
+          <List title="Alcuni esempi:">
+            <ListItem>
+              Suggerimenti automatici basati sul comportamento dell&apos;utente.
+            </ListItem>
+            <ListItem>
+              UI che si adatta dinamicamente alle esigenze di accessibilità.
+            </ListItem>
+            <ListItem>
+              Interfacce conversazionali con chatbot avanzati.
+            </ListItem>
+          </List>
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Modalità Scura e Temi Dinamici
+          </Heading>
+          <Description>
+            La dark mode è ormai uno standard, ma nel 2025 vedremo temi ancora
+            più personalizzabili. I siti e le app permetteranno agli utenti di
+            scegliere tra più schemi di colori adattivi, migliorando il comfort
+            visivo e il coinvolgimento.
+          </Description>
+          <List title="Alcuni esempi:">
+            <ListItem>
+              Modalità notturna con toni caldi per ridurre l&apos;affaticamento
+              degli occhi.
+            </ListItem>
+            <ListItem>
+              Palette cromatiche personalizzabili dall&apos;utente.
+            </ListItem>
+          </List>
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Mobile-First e Design Fluidi
+          </Heading>
+          <Description>
+            Con l&apos;aumento dell&apos;uso mobile, le interfacce saranno
+            sempre più
+            <strong>mobile-first</strong>, con <strong>design fluidi</strong>{" "}
+            che si adattano in modo perfetto a qualsiasi dispositivo. Il
+            concetto di <strong>adaptive design</strong> supererà il
+            tradizionale responsive design, rendendo l&apos;esperienza utente
+            ancora più fluida.
+          </Description>
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Microinterazioni e Animazioni Avanzate
+          </Heading>
+          <Description>
+            Le <strong>microinterazioni</strong> rendono l&apos;esperienza
+            utente più intuitiva e coinvolgente. Nel 2025, queste diventeranno
+            più sofisticate, utilizzando animazioni avanzate per migliorare la
+            navigazione e il feedback visivo.
+          </Description>
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Design senza Interfaccia (UI-less Design)
+          </Heading>
+          <Description>
+            L&apos;interazione vocale, la realtà aumentata e i dispositivi
+            indossabili stanno portando a un futuro in cui la UI visibile sarà
+            sempre meno centrale. Gli utenti potranno interagire con le
+            piattaforme senza bisogno di schermi tradizionali.
+          </Description>
+          <List title="Alcuni esempi:">
+            <ListItem>
+              Assistenti vocali avanzati per la navigazione web.
+            </ListItem>
+            <ListItem>Interfacce basate su gesti (gesture-based UI).</ListItem>
+            <ListItem>
+              Esperienze AR/VR per l&apos;interazione senza touch.
+            </ListItem>
+          </List>
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Accessibilità e Inclusività Prioritarie
+          </Heading>
+          <Description>
+            Nel 2025, l&apos;accessibilità non sarà più un'opzione, ma un must.
+            Le normative si faranno più stringenti e le interfacce dovranno
+            garantire un&apos;esperienza ottimale per tutti, incluse persone con
+            disabilità.
+          </Description>
+          <List title="Alcuni esempi:">
+            <ListItem>Migliore contrasto e leggibilità.</ListItem>
+            <ListItem>Controlli vocali e navigazione alternativa.</ListItem>
+            <ListItem>Compatibilità con screen reader avanzati.</ListItem>
+          </List>
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Conclusione
+          </Heading>
+          <Description>
+            Le interfacce utente del 2025 saranno più intelligenti, fluide e
+            accessibili. L&apos;AI, la personalizzazione e le microinterazioni
+            miglioreranno il modo in cui gli utenti navigano il web, mentre il
+            design mobile-first e la riduzione delle interfacce visibili
+            ridefiniranno l&apos;interazione digitale.
+          </Description>
+        </Flex>
+      </>
+    ),
+    link: "/blog/tendenze-uiux-2025",
+    slug: "tendenze-uiux-2025",
+    images: ["/images/blog/tendenze-uiux-2025.webp"],
+  },
+  {
     title: "React vs. Next.js: Quale scegliere per il tuo prossimo progetto?",
     short_description:
       "Entrambe le tecnologie sono potenti e offrono vantaggi significativi, ma quale è la scelta giusta per il tuo progetto?",
@@ -187,144 +326,5 @@ export const posts = [
     link: "/blog/nextjs-vs-react",
     slug: "nextjs-vs-react",
     images: ["/images/blog/react-vs-nextjs.webp"],
-  },
-  {
-    title: "UI/UX nel 2025: Le nuove tendenze che devi conoscere",
-    short_description:
-      "L’evoluzione del design UI/UX è inarrestabile e nel 2025 vedremo nuove tendenze che ridefiniranno l’esperienza utente sul web e nelle app.",
-    date: "Mar 01, 2025",
-    content: (
-      <>
-        {/* OGNI SEZIONE è SEPARATA DA 32 PX di GAP */}
-        <Description>
-          L&apos;evoluzione del design UI/UX è inarrestabile e nel 2025 vedremo
-          nuove tendenze che ridefiniranno l&apos;esperienza utente sul web e
-          nelle app. Con l&apos;avanzamento dell&apos;intelligenza artificiale,
-          il minimalismo funzionale e la crescente importanza
-          dell&apos;accessibilità, è essenziale per i designer e sviluppatori
-          rimanere aggiornati. Vediamo insieme le principali novità!
-        </Description>
-        <Line background="neutral-alpha-strong" />
-        <Flex direction="column" gap="16">
-          <Heading as="h2" variant="display-strong-xs">
-            AI-Driven UX: Personalizzazione Intelligente
-          </Heading>
-          <Description>
-            L&apos;<strong>intelligenza artificiale</strong> avrà un ruolo
-            sempre più centrale nella progettazione UX. Gli algoritmi saranno in
-            grado di adattare le interfacce in tempo reale in base alle
-            abitudini e preferenze degli utenti, offrendo un&apos;esperienza
-            sempre più personalizzata.
-          </Description>
-          <List title="Alcuni esempi:">
-            <ListItem>
-              Suggerimenti automatici basati sul comportamento dell&apos;utente.
-            </ListItem>
-            <ListItem>
-              UI che si adatta dinamicamente alle esigenze di accessibilità.
-            </ListItem>
-            <ListItem>
-              Interfacce conversazionali con chatbot avanzati.
-            </ListItem>
-          </List>
-        </Flex>
-        <Flex direction="column" gap="16">
-          <Heading as="h2" variant="display-strong-xs">
-            Modalità Scura e Temi Dinamici
-          </Heading>
-          <Description>
-            La dark mode è ormai uno standard, ma nel 2025 vedremo temi ancora
-            più personalizzabili. I siti e le app permetteranno agli utenti di
-            scegliere tra più schemi di colori adattivi, migliorando il comfort
-            visivo e il coinvolgimento.
-          </Description>
-          <List title="Alcuni esempi:">
-            <ListItem>
-              Modalità notturna con toni caldi per ridurre l&apos;affaticamento
-              degli occhi.
-            </ListItem>
-            <ListItem>
-              Palette cromatiche personalizzabili dall&apos;utente.
-            </ListItem>
-          </List>
-        </Flex>
-        <Flex direction="column" gap="16">
-          <Heading as="h2" variant="display-strong-xs">
-            Mobile-First e Design Fluidi
-          </Heading>
-          <Description>
-            Con l&apos;aumento dell&apos;uso mobile, le interfacce saranno
-            sempre più
-            <strong>mobile-first</strong>, con <strong>design fluidi</strong>{" "}
-            che si adattano in modo perfetto a qualsiasi dispositivo. Il
-            concetto di <strong>adaptive design</strong> supererà il
-            tradizionale responsive design, rendendo l&apos;esperienza utente
-            ancora più fluida.
-          </Description>
-        </Flex>
-        <Flex direction="column" gap="16">
-          <Heading as="h2" variant="display-strong-xs">
-            Microinterazioni e Animazioni Avanzate
-          </Heading>
-          <Description>
-            Le <strong>microinterazioni</strong> rendono l&apos;esperienza
-            utente più intuitiva e coinvolgente. Nel 2025, queste diventeranno
-            più sofisticate, utilizzando animazioni avanzate per migliorare la
-            navigazione e il feedback visivo.
-          </Description>
-        </Flex>
-        <Flex direction="column" gap="16">
-          <Heading as="h2" variant="display-strong-xs">
-            Design senza Interfaccia (UI-less Design)
-          </Heading>
-          <Description>
-            L&apos;interazione vocale, la realtà aumentata e i dispositivi
-            indossabili stanno portando a un futuro in cui la UI visibile sarà
-            sempre meno centrale. Gli utenti potranno interagire con le
-            piattaforme senza bisogno di schermi tradizionali.
-          </Description>
-          <List title="Alcuni esempi:">
-            <ListItem>
-              Assistenti vocali avanzati per la navigazione web.
-            </ListItem>
-            <ListItem>Interfacce basate su gesti (gesture-based UI).</ListItem>
-            <ListItem>
-              Esperienze AR/VR per l&apos;interazione senza touch.
-            </ListItem>
-          </List>
-        </Flex>
-        <Flex direction="column" gap="16">
-          <Heading as="h2" variant="display-strong-xs">
-            Accessibilità e Inclusività Prioritarie
-          </Heading>
-          <Description>
-            Nel 2025, l&apos;accessibilità non sarà più un'opzione, ma un must.
-            Le normative si faranno più stringenti e le interfacce dovranno
-            garantire un&apos;esperienza ottimale per tutti, incluse persone con
-            disabilità.
-          </Description>
-          <List title="Alcuni esempi:">
-            <ListItem>Migliore contrasto e leggibilità.</ListItem>
-            <ListItem>Controlli vocali e navigazione alternativa.</ListItem>
-            <ListItem>Compatibilità con screen reader avanzati.</ListItem>
-          </List>
-        </Flex>
-        <Flex direction="column" gap="16">
-          <Heading as="h2" variant="display-strong-xs">
-            Conclusione
-          </Heading>
-          <Description>
-            Le interfacce utente del 2025 saranno più intelligenti, fluide e
-            accessibili. L&apos;AI, la personalizzazione e le microinterazioni
-            miglioreranno il modo in cui gli utenti navigano il web, mentre il
-            design mobile-first e la riduzione delle interfacce visibili
-            ridefiniranno l&apos;interazione digitale.
-          </Description>
-        </Flex>
-      </>
-    ),
-    link: "/blog/tendenze-uiux-2025",
-    slug: "tendenze-uiux-2025",
-    images: ["/images/blog/tendenze-uiux-2025.webp"],
   },
 ];
