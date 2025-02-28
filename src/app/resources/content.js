@@ -1,4 +1,5 @@
-import { Badge, Button, InlineCode } from "@/once-ui/components";
+import { Button } from "@/once-ui/components";
+import { posts } from "./posts";
 
 const person = {
   firstName: "Francesco",
@@ -501,4 +502,12 @@ const contacts = {
   },
 };
 
-export { person, social, newsletter, home, about, contacts };
+const blog = {
+  label: "Blog",
+  title: "DevMind – Codice, Creatività e Innovazione",
+  description:
+    "Benvenuto nel mio spazio digitale dedicato a tutto ciò che riguarda il mondo dello sviluppo web! Qui troverai tips, tricks e news su front-end, back-end, UI/UX e nuove tecnologie.",
+  posts: posts,
+};
+
+export { person, social, newsletter, home, about, contacts, blog };

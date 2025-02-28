@@ -5,7 +5,7 @@ import classNames from "classnames";
 
 import { Footer } from "@/components/footer/Footer";
 import { Header } from "@/components/header/Header";
-import { effects } from "@/app/resources";
+import { effects } from "./resources";
 
 import { Raleway } from "next/font/google";
 import { Sora } from "next/font/google";
