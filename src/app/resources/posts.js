@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Line } from "@/once-ui/components/Line";
 import { Flex, Heading, Icon, Text } from "@/once-ui/components";
+import { CodeBlock } from "@/once-ui/modules";
 
 const Description = ({ children }) => (
   <Text variant="body-default-m">{children}</Text>
@@ -25,6 +26,173 @@ const ListItem = ({ children }) => (
 );
 
 export const posts = [
+  {
+    title: "Ottimizzazione delle performance con Lazy Loading e Code Splitting",
+    short_description:
+      "Le prestazioni di un sito web o di un’applicazione sono cruciali per garantire un'esperienza utente fluida e reattiva. Scopri come utilizzare Lazy Loading e Code Splitting per ottimizzare le performance del tuo progetto.",
+    date: "Mar 02, 2025",
+    content: (
+      <>
+        {/* OGNI SEZIONE è SEPARATA DA 32 PX di GAP */}
+        <Description>
+          Le prestazioni di un sito web o di un&apos;applicazione sono cruciali
+          per garantire un'esperienza utente fluida e reattiva. Due tecniche
+          fondamentali per migliorare il caricamento delle pagine e ridurre il
+          consumo di risorse sono <strong>Lazy Loading</strong> e{" "}
+          <strong>Code Splitting</strong>. In questo articolo, esploreremo come
+          funzionano e come implementarli efficacemente nei tuoi progetti.
+        </Description>
+        <Line background="neutral-alpha-strong" />
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Lazy Loading: Caricare solo quando necessario
+          </Heading>
+          <Description>
+            Il <strong>Lazy Loading</strong> (caricamento pigro) è una tecnica
+            che permette di caricare elementi di una pagina solo quando sono
+            necessari. Questo è particolarmente utile per immagini, video e
+            componenti JavaScript pesanti.
+          </Description>
+          <List title="Vantaggi del Lazy Loading">
+            <ListItem>
+              <strong>Migliora il tempo di caricamento iniziale</strong>{" "}
+              riducendo il numero di risorse caricate.
+            </ListItem>
+            <ListItem>
+              <strong>Ottimizza l&apos;uso della banda</strong> evitando di
+              scaricare contenuti non visualizzati.
+            </ListItem>
+            <ListItem>
+              <strong>Aumenta le performance e la SEO</strong> riducendo il
+              tempo di rendering della pagina.
+            </ListItem>
+          </List>
+          <Heading as="h3">Implementare il Lazy Loading</Heading>
+          <Heading as="h4">📷 Lazy Loading delle immagini</Heading>
+          <Description>
+            L&apos;HTML moderno supporta nativamente il Lazy Loading con
+            l&apos;attributo loading:
+          </Description>
+          <CodeBlock
+            codeInstances={[
+              {
+                code: "<img src='immagine.jpg' alt='Esempio' loading='lazy' />",
+                label: "HTML",
+                language: "html",
+              },
+            ]}
+          />
+          <Heading as="h4">
+            🏗️ Lazy Loading dei componenti in React/Next.js
+          </Heading>
+          <Description>
+            Se utilizzi <strong>React</strong>, puoi sfruttare la funzione
+            React.lazy() per il caricamento dinamico dei componenti:
+          </Description>
+          <CodeBlock
+            codeInstances={[
+              {
+                code: "import React, { Suspense, lazy } from 'react';\n\nconst LazyComponent = lazy(() => import('./LazyComponent'));\n\nfunction App() {\n  return (\n    <Suspense fallback={<div>Caricamento...</div>}>\n      <LazyComponent />\n    </Suspense>\n  );\n}",
+                label: "React",
+                language: "jsx",
+              },
+            ]}
+          />
+          <Description>
+            In <strong>Next.js</strong> supporto al Lazy Loading è nativo grazie
+            alla funzione next/dynamic:
+          </Description>
+          <CodeBlock
+            codeInstances={[
+              {
+                code: "import dynamic from 'next/dynamic';\n\nconst DynamicComponent = dynamic(() => import('../components/DynamicComponent'));\n\nexport default function Page() {\n  return <DynamicComponent />;\n}",
+                label: "Next.js",
+                language: "jsx",
+              },
+            ]}
+          />
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Code Splitting: Dividere per ottimizzare
+          </Heading>
+          <Description>
+            Il <strong>Code Splitting</strong> (divisione del codice) è una
+            tecnica che permette di suddividere il codice JavaScript in più
+            parti, caricando solo ciò che è necessario per una determinata
+            pagina o funzionalità.
+          </Description>
+          <List title="Vantaggi del code splitting:">
+            <ListItem>
+              <strong>Riduce il tempo di caricamento iniziale</strong> caricando
+              solo il codice strettamente necessario.
+            </ListItem>
+            <ListItem>
+              <strong>Migliora la gestione della cache</strong> evitando di
+              dover ricaricare l&apos;intero bundle ad ogni aggiornamento.
+            </ListItem>
+            <ListItem>
+              <strong>
+                Evita il problema dei file JavaScript troppo pesanti
+              </strong>{" "}
+              migliorando l&apos;esperienza utente.
+            </ListItem>
+          </List>
+          <Heading as="h3">Implementare il Code Splitting</Heading>
+          <Heading as="h4">📌 Code Splitting con Webpack</Heading>
+          <Description>
+            Webpack supporta il Code Splitting utilizzando import() per il
+            caricamento dinamico:
+          </Description>
+          <CodeBlock
+            codeInstances={[
+              {
+                code: "function loadModule() {\n  import('./module').then((module) => {\n    module.default();\n  });\n}",
+                label: "JS",
+                language: "jsx",
+              },
+            ]}
+          />
+          <Heading as="h4">⚡ Code Splitting in Next.js</Heading>
+          <Description>
+            In <strong>Next.js</strong>, ogni pagina viene caricata solo quando
+            necessaria. Tuttavia, è possibile ottimizzare ulteriormente
+            dividendo il codice dei componenti:
+          </Description>
+          <CodeBlock
+            codeInstances={[
+              {
+                code: "import dynamic from 'next/dynamic';\n\nconst HeavyComponent = dynamic(() => import('../components/HeavyComponent'), { ssr: false });",
+                label: "JS",
+                language: "jsx",
+              },
+            ]}
+          />
+          <Description>
+            Inoltre, Next.js permette di dividere il codice anche a livello di
+            routing, caricando le pagine solo quando l&apos;utente le visita.
+          </Description>
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Conclusione
+          </Heading>
+          <Description>
+            L&apos;uso combinato di <strong>Lazy Loading</strong> e{" "}
+            <strong>Code Splitting</strong> può migliorare significativamente le
+            prestazioni del tuo sito o applicazione web. Implementare queste
+            tecniche riduce il tempo di caricamento, ottimizza l&apos;uso delle
+            risorse e migliora l&apos;esperienza utente. Se stai sviluppando con{" "}
+            <strong>Next.js</strong>, queste funzionalità sono già integrate e
+            semplici da adottare!
+          </Description>
+        </Flex>
+      </>
+    ),
+    link: "/blog/lazy-loading-e-code-splitting",
+    slug: "lazy-loading-e-code-splitting",
+    images: ["/images/blog/lazy-loading-e-code-splitting.webp"],
+  },
   {
     title: "UI/UX nel 2025: Le nuove tendenze che devi conoscere",
     short_description:

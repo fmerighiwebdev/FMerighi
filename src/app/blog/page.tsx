@@ -7,8 +7,13 @@ import {
   SmartImage,
 } from "@/once-ui/components";
 import { blog } from "../resources";
-import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Blog - Francesco Merighi",
+  description:
+    "Benvenuto nel mio spazio digitale dedicato a tutto ciò che riguarda il mondo dello sviluppo web! Qui troverai tips, tricks e news su front-end, back-end, UI/UX e nuove tecnologie.",
+};
 
 export default function BlogPage() {
   return (
@@ -38,8 +43,9 @@ export default function BlogPage() {
                   objectFit="cover"
                   aspectRatio="16/9"
                   radius="l"
+                  className="flex-1"
                 />
-                <Flex gap="4" direction="column">
+                <Flex gap="4" direction="column" className="flex-1">
                   <Text variant="body-strong-xl">{post.title}</Text>
                   <Text variant="body-default-s">{post.short_description}</Text>
                   <Text
