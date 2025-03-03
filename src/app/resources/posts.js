@@ -27,6 +27,278 @@ const ListItem = ({ children }) => (
 
 export const posts = [
   {
+    title:
+      "SEO per sviluppatori: Tecniche avanzate per migliorare la visibilità",
+    short_description:
+      "Gli aspetti tecnici giocano un ruolo cruciale nell'ottimizzazione per i motori di ricerca, influenzando direttamente la visibilità e le prestazioni del sito web.",
+    date: "Mar 03, 2025",
+    content: (
+      <>
+        {/* OGNI SEZIONE è SEPARATA DA 32 PX di GAP */}
+        <Description>
+          Se sei uno sviluppatore web, probabilmente sai che la{" "}
+          <strong>SEO</strong> non riguarda solo le parole chiave e i meta tag.
+          Gli aspetti tecnici giocano un ruolo cruciale nell'ottimizzazione per
+          i motori di ricerca, influenzando direttamente la visibilità e le
+          prestazioni del sito. In questo articolo, esploreremo le migliori
+          pratiche SEO avanzate che ogni sviluppatore dovrebbe conoscere per
+          migliorare il ranking e l&apos;esperienza utente.
+        </Description>
+        <Line background="neutral-alpha-strong" />
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Struttura del sito web e SEO tecnica
+          </Heading>
+          <Description>
+            Una struttura del sito ben organizzata aiuta i motori di ricerca a
+            comprendere meglio i contenuti e migliora l&apos;indicizzazione.
+          </Description>
+          <List title="📂 Architettura dell'informazione">
+            <ListItem>
+              Utilizza una <strong>struttura gerarchica</strong> con una chiara
+              divisione in categorie e sottocategorie.
+            </ListItem>
+            <ListItem>
+              Assicurati che ogni pagina sia accessibile con un massimo di{" "}
+              <strong>tre clic dalla home page</strong>.
+            </ListItem>
+            <ListItem>
+              Implementa una navigazione chiara, ad esempio tramite l'utilizzo
+              di <strong>breadcrumbs</strong>.
+            </ListItem>
+          </List>
+          <List title="🗺️ Sitemap XML e Robots.txt">
+            <ListItem>
+              Genera e invia una <strong>sitemap XML</strong> a Google Search
+              Console per facilitare l&apos;indicizzazione.
+            </ListItem>
+            <ListItem>
+              Configura correttamente il file <strong>robots.txt</strong> per
+              impedire l'accesso ai contenuti non rilevanti.
+            </ListItem>
+          </List>
+          <CodeBlock
+            codeInstances={[
+              {
+                code: "User-agent: *\nDisallow: /admin/\nAllow: /public/\nSitemap: https://www.example.com/sitemap.xml",
+                label: "robots.txt",
+                language: "txt",
+              },
+            ]}
+          />
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Performance e Core Web Vitals
+          </Heading>
+          <Description>
+            Google premia i siti veloci e performanti. I{" "}
+            <strong>Core Web Vitals</strong>
+            metriche fondamentali per la SEO tecnica.
+          </Description>
+          <List title="📊 Principali Core Web Vitals:">
+            <ListItem>
+              <strong>LCP (Largest Contentful Paint)</strong>: Tempo di
+              caricamento dell'elemento più grande.
+            </ListItem>
+            <ListItem>
+              <strong>FID (First Input Delay)</strong>: Tempo di risposta
+              all&apos;interazione dell&apos;utente.
+            </ListItem>
+            <ListItem>
+              <strong>CLS (Cumulative Layout Shift)</strong>: Stabilità visiva
+              della pagina.
+            </ListItem>
+          </List>
+          <List title="🚀 Tecniche per migliorare le performance:">
+            <ListItem>
+              <strong>Ottimizza immagini</strong> con formati moderni (WebP,
+              AVIF) e caricale in modalità <strong>lazy loading</strong>.
+            </ListItem>
+            <ListItem>
+              <strong>Minimizza e comprimi</strong> CSS, JavaScript e HTML.
+            </ListItem>
+            <ListItem>
+              <strong>Utilizza una CDN</strong> per distribuire i contenuti in
+              modo efficiente.
+            </ListItem>
+            <ListItem>
+              <strong>Abilita il caching</strong> con Cache-Control e ETag.
+            </ListItem>
+          </List>
+          <Description>Esempio di caching nel file .htaccess:</Description>
+          <CodeBlock
+            codeInstances={[
+              {
+                code: "<IfModule mod_expires.c>\n  ExpiresActive On\n  ExpiresByType image/webp 'access plus 1 month'\n</IfModule>",
+                label: ".htaccess",
+                language: "txt",
+              },
+            ]}
+          />
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Ottimizzazione del crawling e indicizzazione
+          </Heading>
+          <Description>
+            Se Google non può accedere ai tuoi contenuti, essi non possono
+            essere indicizzati! Assicurati che il tuo sito sia accessibile e ben
+            strutturato.
+          </Description>
+          <List title="✅ Strategie per un buon crawling:">
+            <ListItem>
+              Usa i <strong>canonical tag</strong> per evitare contenuti
+              duplicati:
+              <CodeBlock
+                codeInstances={[
+                  {
+                    code: "<link rel='canonical' href='https://www.example.com/articolo' />",
+                    label: "HTML",
+                    language: "html",
+                  },
+                ]}
+              />
+            </ListItem>
+            <ListItem>
+              Evita <strong>parametri URL eccessivi</strong> che possono
+              generare contenuti duplicati.
+            </ListItem>
+            <ListItem>
+              Usa il file .htaccess o server.js (dipende dall'ambiente di
+              configurazione) per gestire i{" "}
+              <strong>reindirizzamenti 301</strong> e migliorare la struttura
+              dei link.
+            </ListItem>
+          </List>
+          <Description>Esempio di redirect 301 in .htaccess:</Description>
+          <CodeBlock
+            codeInstances={[
+              {
+                code: "Redirect 301 /pagina-vecchia https://www.tuosito.com/pagina-nuova",
+                label: ".htaccess",
+                language: "txt",
+              },
+            ]}
+          />
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            SEO per siti multilingua e internazionali
+          </Heading>
+          <Description>
+            Se il tuo sito ha più lingue, devi implementare correttamente i tag
+            hreflang. Questi aiutano i motori di ricerca a capire quale versione
+            del sito web è più rilevante per l'utente.
+          </Description>
+          <Description>Esempio di hreflang:</Description>
+          <CodeBlock
+            codeInstances={[
+              {
+                code: "<link rel='alternate' hreflang='it' href='https://www.tuosito.com/it/' />\n<link rel='alternate' hreflang='en' href='https://www.tuosito.com/en/' />",
+                label: "HTML",
+                language: "html",
+              },
+            ]}
+          />
+          <List title="Alcuni consigli:">
+            <ListItem>
+              Evita di tradurre automaticamente i contenuti senza verifica
+              umana.
+            </ListItem>
+            <ListItem>
+              Implementa <strong>subdirectory</strong> (/it/, /en/) o{" "}
+              <strong>sottodomini</strong> (it.example.com) in base alla
+              strategia SEO scelta.
+            </ListItem>
+          </List>
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Mobile SEO e design responsive
+          </Heading>
+          <Description>
+            Google utilizza il <strong>mobile-first indexing</strong>, quindi il
+            sito web deve essere perfetto su smartphone. Assicurati che il
+            design sia responsive e le prestazioni siano ottimali su dispositivi
+            mobili.
+          </Description>
+          <List title="📌 Best practices per Mobile SEO:">
+            <ListItem>
+              Implementa un <strong>design responsive</strong> con le CSS media
+              queries.
+            </ListItem>
+            <ListItem>
+              Evita <strong>pop-up invasivi</strong> che compromettono
+              l&apos;esperienza utente.
+            </ListItem>
+            <ListItem>
+              Ottimizza la velocità mobile con{" "}
+              <Link href="https://amp.dev/index-2021">
+                AMP (Accelerated Mobile Pages)
+              </Link>{" "}
+              se necessario.
+            </ListItem>
+          </List>
+          <Description>
+            Esempio di media query per responsive design:
+          </Description>
+          <CodeBlock
+            codeInstances={[
+              {
+                code: "@media (max-width: 768px) {\n  body {\n    font-size: 16px;\n  }\n}",
+                label: "CSS",
+                language: "css",
+              },
+            ]}
+          />
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Ottimizzazione dei file e sicurezza
+          </Heading>
+          <Description>
+            Proteggi il sito web da attacchi informatici per migliorare la
+            sicurezza e la SEO.
+          </Description>
+          <List title="🔐 HTTPS e sicurezza">
+            <ListItem>
+              Assicurati che il sito web utilizzi <strong>HTTPS</strong>.
+            </ListItem>
+            <ListItem>
+              Implementa <strong>Content Security Policy (CSP)</strong> per
+              proteggere il sito web da attacchi XSS.
+            </ListItem>
+          </List>
+          <List title="📂 Struttura URL SEO-friendly">
+            <ListItem>Evita URL dinamici complessi (?id=123&cat=seo).</ListItem>
+            <ListItem>
+              Usa URL leggibili e ottimizzati (/seo-per-sviluppatori).
+            </ListItem>
+          </List>
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Conclusione
+          </Heading>
+          <Description>
+            Ottimizzare un sito per la SEO tecnica richiede attenzione ai
+            dettagli, ma i risultati in termini di visibilità e performance ne
+            valgono la pena. Concentrati su{" "}
+            <strong>struttura del sito web</strong>,{" "}
+            <strong>performance</strong>,<strong>indicizzazione</strong>,{" "}
+            <strong>mobile SEO</strong> e{" "}
+            <strong>dati sicuri e strutturati</strong> per ottenere un sito web
+            più veloce, accessibile e ben posizionato nei motori di ricerca.
+          </Description>
+        </Flex>
+      </>
+    ),
+    link: "/blog/seo-per-sviluppatori",
+    slug: "seo-per-sviluppatori",
+    images: ["/images/blog/seo-per-sviluppatori.webp"],
+  },
+  {
     title: "Ottimizzazione delle performance con Lazy Loading e Code Splitting",
     short_description:
       "Le prestazioni di un sito web o di un’applicazione sono cruciali per garantire un'esperienza utente fluida e reattiva. Scopri come utilizzare Lazy Loading e Code Splitting per ottimizzare le performance del tuo progetto.",
