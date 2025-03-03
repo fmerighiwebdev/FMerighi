@@ -149,16 +149,7 @@ export const posts = [
           <List title="✅ Strategie per un buon crawling:">
             <ListItem>
               Usa i <strong>canonical tag</strong> per evitare contenuti
-              duplicati:
-              <CodeBlock
-                codeInstances={[
-                  {
-                    code: "<link rel='canonical' href='https://www.example.com/articolo' />",
-                    label: "HTML",
-                    language: "html",
-                  },
-                ]}
-              />
+              duplicati.
             </ListItem>
             <ListItem>
               Evita <strong>parametri URL eccessivi</strong> che possono
