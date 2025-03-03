@@ -93,8 +93,8 @@ export const posts = [
           </Heading>
           <Description>
             Google premia i siti veloci e performanti. I{" "}
-            <strong>Core Web Vitals</strong>
-            metriche fondamentali per la SEO tecnica.
+            <strong>Core Web Vitals</strong> sono un insieme di metriche che misurano
+            l&apos;esperienza utente in termini di velocità, reattività e stabilità.
           </Description>
           <List title="📊 Principali Core Web Vitals:">
             <ListItem>
