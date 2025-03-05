@@ -6,7 +6,7 @@ import { posts } from "./resources/posts";
 export default async function sitemap() {
   const blogs = posts.map((post) => ({
     url: `https://${baseURL}/blog/${post.slug}`,
-    lastModified: post.date,
+    lastModified: new Date(post.date).toISOString().split("T")[0],
   }));
 
   const activeRoutes = Object.keys(routesConfig).filter(
