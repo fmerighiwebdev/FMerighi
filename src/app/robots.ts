@@ -8,7 +8,7 @@ export default function robots() {
         allow: ["/images/"],
       },
     ],
-    sitemap: `${baseURL}/sitemap.xml`,
+    sitemap: `https://${baseURL}/sitemap.xml`,
   };
 }
 

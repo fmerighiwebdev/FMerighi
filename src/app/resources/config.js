@@ -1,4 +1,4 @@
-const baseURL = "fmerighi.it";
+const baseURL = "www.fmerighi.it";
 
 const routes = {
   "/": true,
