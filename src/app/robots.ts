@@ -11,4 +11,3 @@ export default function robots() {
     sitemap: `https://${baseURL}/sitemap.xml`,
   };
 }
-
