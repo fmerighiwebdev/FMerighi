@@ -61,21 +61,6 @@ const social = [
   },
 ];
 
-const home = {
-  label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Full-Stack Web/Software Developer</>,
-  subline: (
-    <>
-      Mi chiamo Francesco Merighi e sono uno{" "}
-      <span>Sviluppatore Web e Software</span> con anni di esperienza nella
-      progettazione, sviluppo e implementazione di soluzioni digitali
-      personalizzate.
-    </>
-  ),
-};
-
 const about = {
   label: "Home",
   title: "About me",
@@ -466,7 +451,8 @@ const about = {
         title: "Vari linguaggi di programmazione",
         description: (
           <>
-            Conoscenza di vari linguaggi di programmazione: Python, PHP, Java, C.
+            Conoscenza di vari linguaggi di programmazione: Python, PHP, Java,
+            C.
           </>
         ),
         // optional: leave the array empty if you don't want to display images
@@ -510,4 +496,14 @@ const blog = {
   posts: posts,
 };
 
-export { person, social, newsletter, home, about, contacts, blog };
+const work = {
+  label: "Lavoro",
+  title: "Trasformiamo le Idee in Esperienze Digitali Straordinarie",
+  description:
+    "Che tu abbia bisogno di un sito web performante, un’app web avanzata o un eCommerce che genera vendite, realizzo soluzioni digitali su misura per coinvolgere e convertire. Design innovativo, funzionalità impeccabile e strategie di digital marketing orientate ai risultati per far crescere il tuo brand.",
+  showcase_title: "Progetti di Successo: Uno Sguardo al Mio Lavoro",
+  showcase_description:
+    "Scopri alcuni dei miei ultimi progetti, realizzati con precisione e pensati per lasciare il segno. Ogni lavoro riflette la mia dedizione all’innovazione, all’esperienza utente e alle prestazioni.",
+};
+
+export { person, social, newsletter, about, contacts, blog, work };

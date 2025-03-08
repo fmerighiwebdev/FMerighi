@@ -47,7 +47,7 @@ import { IoIosSend } from "react-icons/io";
 
 import { CiUser, CiMail } from "react-icons/ci";
 
-import { FaHtml5, FaInstagram } from "react-icons/fa";
+import { FaHtml5, FaInstagram, FaLaptopCode } from "react-icons/fa";
 
 import { MdPhone } from "react-icons/md";
 
@@ -96,4 +96,5 @@ export const iconLibrary: Record<string, IconType> = {
   emailOutline: CiMail,
   phoneOutline: BsTelephone,
   send: IoIosSend,
+  code: FaLaptopCode
 };

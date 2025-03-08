@@ -132,6 +132,7 @@ const Scroller: React.FC<ScrollerProps> = ({
         zIndex={0}
         position="relative"
         radius="m"
+        gap="16"
         direction={direction}
         className={classNames(styles.scroller, styles[direction])}
         ref={scrollerRef}

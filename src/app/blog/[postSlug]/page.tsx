@@ -93,7 +93,7 @@ export default async function BlogPage({ params }) {
               marginBottom="s"
               variant="display-strong-xs"
             >
-              Pronto a portare il tuo progetto al livello successivo?
+              Trasformiamo la tua idea in realtà!
             </Heading>
             <Text
               style={{

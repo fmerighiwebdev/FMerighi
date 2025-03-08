@@ -5,6 +5,7 @@ const routes = {
   "/about": true,
   "/contacts": true,
   "/blog": true,
+  "/work": true,
 };
 
 const style = {

@@ -10,7 +10,6 @@ export {
   person,
   social,
   newsletter,
-  home,
   about,
   blog
 } from "@/app/resources/content";
