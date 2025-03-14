@@ -353,7 +353,7 @@ export const posts = [
             arrivare.
           </Description>
         </Flex>
-        <CTABlock title="🚀 Vuoi migliorare le performance del tuo sito? Contattaci ora per una consulenza gratuita e scopri come aumentare le tue conversioni!" />
+        <CTABlock title="🚀 Vuoi migliorare le performance del tuo sito? Contattami ora per una consulenza gratuita e scopri come aumentare le tue conversioni!" />
       </>
     ),
     link: "/blog/sito-web-non-genera-conversioni",
