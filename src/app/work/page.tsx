@@ -1,11 +1,4 @@
-import {
-  Card,
-  Column,
-  Grid,
-  Heading,
-  Line,
-  Text,
-} from "@/once-ui/components";
+import { Button, Card, Column, Grid, Heading, Line, Text } from "@/once-ui/components";
 import { work } from "../resources/content";
 
 const services = [
@@ -38,7 +31,7 @@ export const metadata = {
 };
 
 const ServiceCard = ({ title, description }) => (
-  <Card maxWidth={24} radius="l-4" direction="column">
+  <Card maxWidth={24} radius="l-4" direction="column" cursor="none">
     <Column fillWidth paddingX="20" paddingY="24" gap="8">
       <Text variant="body-default-xl">{title}</Text>
       <Text onBackground="neutral-weak" variant="body-default-s">
@@ -76,6 +69,15 @@ export default function WorkPage() {
             />
           ))}
         </Grid>
+        <Line background="neutral-alpha-medium" className="my-40" />
+        <Text variant="body-default-l">{work.cta}</Text>
+        <Button
+          href="https://www.fmwebagency.it"
+          variant="primary"
+          size="l"
+          label="Visita il sito web"
+          className="mt-32"
+        />
       </Column>
     </main>
   );

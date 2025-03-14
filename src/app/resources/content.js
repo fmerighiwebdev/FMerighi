@@ -9,8 +9,8 @@ const person = {
   },
   role: "Full-Stack Web Developer",
   avatar: "/images/avatar.webp",
-  location: "", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["Italiano", "English"], // optional: Leave the array empty if you don't want to display languages
+  location: "",
+  languages: ["Italiano", "English"],
 };
 
 const newsletter = {
@@ -27,8 +27,6 @@ const newsletter = {
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "Telefono",
     icon: "phone",
@@ -88,7 +86,7 @@ const about = {
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Esperienza Lavorativa",
     experiences: [
       {
@@ -101,7 +99,6 @@ const about = {
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/ogp-logo.webp",
             alt: "OGP Logo",
@@ -501,9 +498,7 @@ const work = {
   title: "Trasformiamo le Idee in Esperienze Digitali Straordinarie",
   description:
     "Che tu abbia bisogno di un sito web performante, un’app web avanzata o un eCommerce che genera vendite, realizzo soluzioni digitali su misura per coinvolgere e convertire. Design innovativo, funzionalità impeccabile e strategie di digital marketing orientate ai risultati per far crescere il tuo brand.",
-  showcase_title: "Progetti di Successo: Uno Sguardo al Mio Lavoro",
-  showcase_description:
-    "Scopri alcuni dei miei ultimi progetti, realizzati con precisione e pensati per lasciare il segno. Ogni lavoro riflette la mia dedizione all’innovazione, all’esperienza utente e alle prestazioni.",
+  cta: "Vuoi saperne di più? Scopri tutti i nostri servizi nel dettaglio su FM Web Agency e porta il tuo progetto al livello successivo!",
 };
 
 export { person, social, newsletter, about, contacts, blog, work };
