@@ -9,6 +9,7 @@ import {
   Flex,
   Heading,
   Icon,
+  InlineCode,
   Text,
 } from "@/once-ui/components";
 import { CodeBlock } from "@/once-ui/modules";
@@ -19,7 +20,11 @@ const Description = ({ children }) => (
 
 const List = ({ title, description, children }) => (
   <>
-    {title && <Heading as="h4">{title}</Heading>}
+    {title && (
+      <Heading as="h4" variant="heading-strong-s">
+        {title}
+      </Heading>
+    )}
     {description && <Description>{description}</Description>}
     <ul style={{ margin: 0, padding: 0, listStyleType: "none" }}>{children}</ul>
   </>
@@ -116,6 +121,315 @@ const CTABlock = ({ title, text }) => (
 
 export const posts = [
   {
+    title: "SEO: Gli errori nascosti che affossano il tuo sito su Google",
+    short_description:
+      "Anche se produci contenuti eccellenti, senza una solida base tecnica, Google potrebbe non essere in grado di indicizzarti correttamente o, peggio, penalizzarti.",
+    date: "Mar 18, 2025",
+    content: (
+      <>
+        <Description>
+          Hai creato un sito web con contenuti di qualità, ben strutturati e
+          pensati per il tuo pubblico, ma le tue pagine faticano a posizionarsi
+          su Google? Potresti essere vittima di errori di SEO tecnica, elementi
+          invisibili a occhio nudo ma in grado di affossare il tuo ranking nei
+          motori di ricerca.
+        </Description>
+        <Description>
+          La <strong>SEO (Search Engine Optimization)</strong> è la spina
+          dorsale di un sito web ottimizzato. Anche se produci contenuti
+          eccellenti, senza una solida base tecnica, Google potrebbe non essere
+          in grado di indicizzarti correttamente o, peggio, penalizzarti. In
+          questo articolo analizziamo gli errori più comuni che impattano
+          negativamente sulla SEO di un sito web e come correggerli per
+          migliorare il tuo posizionamento sui motori di ricerca.
+        </Description>
+        <Line background="neutral-alpha-strong" />
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Errori comuni di SEO tecnica e come risolverli
+          </Heading>
+          <Heading as="h3" variant="heading-strong-xl">
+            1. Problemi di indicizzazione: il sito non appare su Google
+          </Heading>
+          <Description>
+            Uno dei problemi più frustranti per chi gestisce un sito web è
+            scoprire che le proprie pagine{" "}
+            <strong>non vengono indicizzate correttamente</strong>. Questo può
+            essere dovuto a diverse cause, tra cui errori di configurazione o
+            restrizioni involontarie.
+          </Description>
+          <Heading as="h4" variant="heading-strong-s">
+            Come verificare se Google sta indicizzando il tuo sito web
+          </Heading>
+          <Description>
+            Per scoprire se il tuo sito è indicizzato, digita il seguente
+            indirizzo <InlineCode>site:tuodominio.it</InlineCode> su Google. Se
+            le tue pagine non compaiono nei risultati, potresti avere un
+            <strong>problema di indicizzazione</strong>.
+          </Description>
+          <List title="❌ Errori comuni nei file robots.txt e meta tag noindex">
+            <ListItem>
+              Un file <InlineCode>robots.txt</InlineCode> configurato in modo
+              errato può impedire ai motori di ricerca di eseguire la scansione
+              del sito web.
+            </ListItem>
+            <ListItem>
+              L&apos;uso improprio del meta tag <InlineCode>noindex</InlineCode>{" "}
+              nei contenuti essenziali può escludere pagine importanti
+              dall&apos;indice di Google.
+            </ListItem>
+          </List>
+          <List title="✅ Soluzioni pratiche">
+            <ListItem>
+              Verifica che il file <InlineCode>robots.txt</InlineCode> sia
+              <strong>correttamente configurato</strong> e non blocchi
+              l&apos;accesso alle tue pagine.
+              <CodeBlock
+                marginTop="16"
+                marginBottom="16"
+                codeInstances={[
+                  {
+                    code: "User-agent: *\nDisallow: /",
+                    label: "robots.txt",
+                    language: "txt",
+                  },
+                ]}
+              />
+            </ListItem>
+            <ListItem>
+              Elimina il meta tag <InlineCode>noindex</InlineCode> dalle pagine
+              che desideri indicizzare e assicurati che{" "}
+              <strong>siano accessibili</strong> ai crawlers di Google.
+            </ListItem>
+            <ListItem>
+              Utilizza lo strumento{" "}
+              <Link href="https://search.google.com/search-console">
+                Google Search Console
+              </Link>{" "}
+              per verificare lo <strong>stato di indicizzazione</strong> del tuo
+              sito web e ricevere notifiche su eventuali problemi.
+            </ListItem>
+          </List>
+          <Heading as="h3" variant="heading-strong-xl">
+            2. Struttura URL inefficace e impatto sulla SEO
+          </Heading>
+          <Description>
+            Gli <strong>URL</strong> delle tue pagine sono fondamentali per una
+            buona indicizzazione. Una struttura URL disordinata o poco chiara
+            può rendere difficile per Google comprendere la gerarchia del sito e
+            penalizzare il posizionamento.
+          </Description>
+          <List title="❌ Errori comuni nella struttura degli URL">
+            <ListItem>
+              URL troppo lunghi, con parametri e codici numerici poco
+              significativi.
+            </ListItem>
+            <ListItem>
+              Mancanza di parole chiave rilevanti e pertinenti.
+            </ListItem>
+            <ListItem>
+              URL dinamici con caratteri speciali o codici di sessione.
+            </ListItem>
+          </List>
+          <List title="✅ Best practices per URL SEO-friendly">
+            <ListItem>
+              Utilizza <strong>URL brevi e descrittivi</strong>, con parole
+              chiave chiare e pertinenti.
+            </ListItem>
+            <ListItem>
+              Elimina <strong>parametri inutili e codici numerici</strong>,
+              mantenendo solo informazioni essenziali.
+            </ListItem>
+            <ListItem>
+              Utilizza <strong>URL statici</strong> con parole chiave rilevanti
+              e significative, separate da trattini.
+            </ListItem>
+          </List>
+          <Feedback
+            variant="info"
+            icon
+            title="🔍 Suggerimento"
+            description="Se hai URL poco ottimizzati, puoi correggerli impostando reindirizzamenti 301 per evitare di perdere traffico e valore SEO."
+          />
+          <Heading as="h3" variant="heading-strong-xl">
+            3. Performance e velocità di caricamento: un fattore di ranking
+            essenziale
+          </Heading>
+          <Description>
+            Google ha dichiarato più volte che la velocità di caricamento è un{" "}
+            <strong>fattore di ranking cruciale</strong>. Un sito web lento non
+            solo penalizza la tua SEO, ma aumenta il tasso di abbandono degli
+            utenti.
+          </Description>
+          <List title="Come misurare le performance del tuo sito web">
+            <ListItem>
+              Utilizza lo strumento{" "}
+              <Link href="https://developers.google.com/speed/pagespeed/insights/">
+                PageSpeed Insights
+              </Link>{" "}
+              per valutare la velocità di caricamento delle tue pagine.
+            </ListItem>
+            <ListItem>
+              Analizza le metriche di{" "}
+              <strong>Largest Contentful Paint (LCP)</strong>,{" "}
+              <strong>First Input Delay (FID)</strong> e{" "}
+              <strong>Cumulative Layout Shift (CLS)</strong> per identificare
+              eventuali criticità.
+            </ListItem>
+            <ListItem>
+              GTmetrix e Lighthouse sono altri strumenti utili per valutare le
+              performance del tuo sito web e ottenere suggerimenti di
+              ottimizzazione.
+            </ListItem>
+          </List>
+          <List title="Tecniche per ottimizzare la velocità">
+            <ListItem>
+              <strong>Comprimi le immagini</strong> e riduci il peso dei file
+              per velocizzare il caricamento delle pagine.
+            </ListItem>
+            <ListItem>
+              Utilizza la <strong>cache del browser</strong> per memorizzare
+              temporaneamente i file e ridurre i tempi di caricamento.
+            </ListItem>
+            <ListItem>
+              <strong>Minimizza il codice CSS e JavaScript</strong> per ridurre
+              il carico sul server e velocizzare il rendering delle pagine.
+            </ListItem>
+            <ListItem>
+              Utilizza un <strong>CDN (Content Delivery Network)</strong> per
+              distribuire i contenuti in modo più efficiente e veloce.
+            </ListItem>
+          </List>
+          <Heading as="h3" variant="heading-strong-xl">
+            4. Problemi di sicurezza e HTTPS
+          </Heading>
+          <Description>
+            La <strong>sicurezza</strong> è un altro aspetto fondamentale per la
+            SEO. Google premia i siti web sicuri e con connessione HTTPS, mentre
+            penalizza quelli non sicuri o con problemi di sicurezza.
+          </Description>
+          <List title="❌ Errori più comuni">
+            <ListItem>
+              Assenza di certificato SSL e connessione non sicura.
+            </ListItem>
+            <ListItem>
+              Presenza di malware, link dannosi o contenuti non sicuri.
+            </ListItem>
+            <ListItem>
+              Problemi di sicurezza come SQL injection o cross-site scripting.
+            </ListItem>
+          </List>
+          <List title="✅ Come risolvere">
+            <ListItem>
+              <strong>Installare un certificato SSL</strong> per garantire una
+              connessione sicura e crittografata.
+            </ListItem>
+            <ListItem>
+              Utilizzare{" "}
+              <strong>
+                plugin di sicurezza o implementazioni specifiche nel codice
+              </strong>{" "}
+              per monitorare e proteggere il sito web da attacchi esterni.
+            </ListItem>
+            <ListItem>
+              Effettuare regolarmente <strong>backup del sito</strong> e
+              aggiornare codice, temi e plugin per evitare vulnerabilità.
+            </ListItem>
+          </List>
+          <Heading as="h3" variant="heading-strong-xl">
+            5. Struttura del sito e link interni inefficienti
+          </Heading>
+          <Description>
+            Una struttura del sito mal organizzata può confondere i motori di
+            ricerca e limitare la distribuzione dell&apos;autorità SEO tra le
+            pagine.
+          </Description>
+          <List title="❌ Errori comuni nella struttura del sito web">
+            <ListItem>
+              Mancanza di una mappa del sito XML (
+              <InlineCode>sitemap.xml</InlineCode>) o di un file{" "}
+              <InlineCode>robots.txt</InlineCode>
+              correttamente configurato.
+            </ListItem>
+            <ListItem>
+              Struttura URL disordinata e gerarchia poco chiara delle pagine,
+              con una navigazione confusa.
+            </ListItem>
+            <ListItem>
+              Link interni non ottimizzati o non rilevanti per la SEO.
+            </ListItem>
+          </List>
+          <List title="✅ Come migliorare la struttura e il linking interno">
+            <ListItem>
+              Crea un file <InlineCode>sitemap.xml</InlineCode> e invialo a
+              Google Search Console per indicizzare correttamente le tue pagine.
+            </ListItem>
+            <ListItem>
+              Organizza le pagine in <strong>gruppi tematici</strong> e utilizza
+              una struttura URL logica e intuitiva.
+            </ListItem>
+            <ListItem>
+              Utilizza <strong>anchor text</strong> pertinenti e parole chiave
+              nei link interni per distribuire l&apos;autorità SEO in modo
+              efficace.
+            </ListItem>
+          </List>
+        </Flex>
+        <CTABlock
+          title="🚀 Vuoi migliorare la SEO tecnica del tuo sito?"
+          text="Non lasciare che errori nascosti penalizzino il tuo posizionamento. Contattami per un’analisi gratuita e scopri come ottimizzare il tuo sito per Google!"
+        />
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Strumenti utili per monitorare e migliorare la SEO tecnica
+          </Heading>
+          <Description>
+            Esistono diversi <strong>strumenti</strong> che possono aiutarti a
+            identificare e correggere problemi tecnici:
+          </Description>
+          <List>
+            <ListItem>
+              <strong>Google Search Console</strong>: per monitorare
+              l&apos;indicizzazione del sito, ricevere notifiche su errori e
+              problemi di sicurezza.
+            </ListItem>
+            <ListItem>
+              <strong>Google PageSpeed Insights</strong>: per valutare le
+              performance del sito e ottenere suggerimenti di ottimizzazione.
+            </ListItem>
+            <ListItem>
+              <strong>SEMrush</strong> e <strong>Ahrefs</strong>: per analizzare
+              la struttura del sito, i link interni e le parole chiave.
+            </ListItem>
+          </List>
+        </Flex>
+        <Flex direction="column" gap="16">
+          <Heading as="h2" variant="display-strong-xs">
+            Conclusione
+          </Heading>
+          <Description>
+            Gli errori di SEO tecnica possono rimanere nascosti ma avere un
+            <strong>impatto devastante</strong> sulle prestazioni del tuo sito.
+            Dall&apos;indicizzazione alla velocità di caricamento, dalla
+            sicurezza alla struttura del sito, ogni dettaglio può fare la
+            differenza tra una pagina ben posizionata e una che non appare nei
+            risultati di ricerca.
+          </Description>
+          <Description>
+            Monitorare e correggere questi problemi è fondamentale per
+            migliorare il ranking e l&apos;esperienza utente. Con gli strumenti
+            giusti e un&apos;ottimizzazione costante, puoi trasformare il tuo
+            sito in una macchina da traffico.
+          </Description>
+        </Flex>
+        <CTABlock title="🚀 Vuoi migliorare la SEO tecnica del tuo sito? Contattaci ora per un’analisi gratuita e scopri come scalare su Google!" />
+      </>
+    ),
+    link: "/blog/seo-errori-comuni-e-soluzioni",
+    slug: "seo-errori-comuni-e-soluzioni",
+    images: ["/images/blog/seo-errori-comuni-e-soluzioni.webp"],
+  },
+  {
     title:
       "Il tuo Sito Web non genera conversioni? Ecco perché e come risolvere",
     short_description:
@@ -142,7 +456,9 @@ export const posts = [
           <Heading as="h2" variant="display-strong-xs">
             Le principali cause di un sito web che non genera conversioni
           </Heading>
-          <Heading as="h3">1. Design obsoleto e poco professionale</Heading>
+          <Heading as="h3" variant="heading-strong-xl">
+            1. Design obsoleto e poco professionale
+          </Heading>
           <Description>
             Il <strong>design</strong> di un sito web è il primo elemento che un
             visitatore nota e influenza la percezione del tuo brand. Un sito
@@ -170,7 +486,9 @@ export const posts = [
               elementi superflui
             </ListItem>
           </List>
-          <Heading as="h3">2. Esperienza utente (UX) inefficace</Heading>
+          <Heading as="h3" variant="heading-strong-xl">
+            2. Esperienza utente (UX) inefficace
+          </Heading>
           <Description>
             L&apos;<strong>esperienza utente (UX)</strong> è determinante per il
             successo di un sito web. Se i visitatori non riescono a navigare
@@ -199,7 +517,9 @@ export const posts = [
               per guidare l&apos;utente all&apos;azione desiderata.
             </ListItem>
           </List>
-          <Heading as="h3">3. Contenuti poco chiari o poco persuasivi</Heading>
+          <Heading as="h3" variant="heading-strong-xl">
+            3. Contenuti poco chiari o poco persuasivi
+          </Heading>
           <Description>
             Un sito web deve comunicare in modo immediato il{" "}
             <strong>valore del tuo servizio o prodotto</strong>. Se i tuoi testi
@@ -227,7 +547,7 @@ export const posts = [
               <strong>testi persuasivi e storytelling</strong>.
             </ListItem>
           </List>
-          <Heading as="h3">
+          <Heading as="h3" variant="heading-strong-xl">
             4. Call to Action (CTA) inefficaci o assenti
           </Heading>
           <Description>
@@ -261,7 +581,9 @@ export const posts = [
               l&apos;azione, come uno sconto o una consulenza gratuita.
             </ListItem>
           </List>
-          <Heading as="h3">5. Problemi tecnici e SEO on-site</Heading>
+          <Heading as="h3" variant="heading-strong-xl">
+            5. Problemi tecnici e SEO on-site
+          </Heading>
           <Description>
             Un sito con <strong>errori tecnici o problemi SEO</strong> potrebbe
             non essere trovato dai clienti giusti o risultare poco affidabile.
@@ -303,7 +625,7 @@ export const posts = [
           <Heading as="h2" variant="display-strong-xs">
             Come trasformare il tuo sito web in una macchina da conversione
           </Heading>
-          <Heading as="h3">
+          <Heading as="h3" variant="heading-strong-xl">
             1. Ottimizzare il design per la fiducia e la credibilità
           </Heading>
           <Description>
@@ -313,7 +635,9 @@ export const posts = [
             armoniosi e immagini di alta qualità per trasmettere professionalità
             e coerenza con il tuo brand.
           </Description>
-          <Heading as="h3">2. Migliorare l&apos;esperienza utente (UX)</Heading>
+          <Heading as="h3" variant="heading-strong-xl">
+            2. Migliorare l&apos;esperienza utente (UX)
+          </Heading>
           <Description>
             L&apos;utente deve navigare il sito senza difficoltà. Assicurati che
             il menu sia intuitivo, le informazioni facilmente accessibili e i
@@ -321,7 +645,9 @@ export const posts = [
             per dispositivi mobili migliora l&apos;esperienza e riduce il tasso
             di abbandono.
           </Description>
-          <Heading as="h3">3. Creare contenuti chiari e persuasivi</Heading>
+          <Heading as="h3" variant="heading-strong-xl">
+            3. Creare contenuti chiari e persuasivi
+          </Heading>
           <Description>
             Il contenuto del sito deve rispondere alle esigenze del cliente.
             Scrivi in modo diretto e chiaro, mettendo in evidenza i vantaggi del
@@ -329,7 +655,7 @@ export const posts = [
             tecniche di copywriting persuasivo come lo storytelling per creare
             connessioni emotive con il lettore.
           </Description>
-          <Heading as="h3">
+          <Heading as="h3" variant="heading-strong-xl">
             5. Eliminare problemi tecnici e migliorare la SEO
           </Heading>
           <Description>
@@ -401,7 +727,7 @@ export const posts = [
           <Heading as="h2" variant="display-strong-xs">
             Perché la velocità del sito è cruciale per il successo online
           </Heading>
-          <Heading as="h3">
+          <Heading as="h3" variant="heading-strong-xl">
             🚀 Google penalizza i siti lenti (e premia quelli veloci!)
           </Heading>
           <Description>
@@ -431,7 +757,7 @@ export const posts = [
             Un sito ottimizzato <strong>scala posizioni su Google</strong>,
             portandoti più traffico organico e clienti.
           </Description>
-          <Heading as="h3">
+          <Heading as="h3" variant="heading-strong-xl">
             😱 Un sito lento allontana gli utenti e fa crollare le conversioni
           </Heading>
           <List>
@@ -500,7 +826,7 @@ export const posts = [
           <Heading as="h2" variant="display-strong-xs">
             Le principali cause di un sito web lento (e come risolverle subito!)
           </Heading>
-          <Heading as="h3">
+          <Heading as="h3" variant="heading-strong-xl">
             1. Hosting inadeguato = Rallentamenti inevitabili
           </Heading>
           <Description>
@@ -519,7 +845,9 @@ export const posts = [
               caricamento.
             </ListItem>
           </List>
-          <Heading as="h3">2. Immagini pesanti che rallentano tutto</Heading>
+          <Heading as="h3" variant="heading-strong-xl">
+            2. Immagini pesanti che rallentano tutto
+          </Heading>
           <Description>
             Le immagini non ottimizzate sono tra le principali cause di un sito
             lento.
@@ -538,7 +866,9 @@ export const posts = [
               solo quando necessario.
             </ListItem>
           </List>
-          <Heading as="h3">3. Codice pesante e richieste inutili</Heading>
+          <Heading as="h3" variant="heading-strong-xl">
+            3. Codice pesante e richieste inutili
+          </Heading>
           <Description>
             Molti siti hanno un codice poco ottimizzato, con file CSS e
             JavaScript troppo grandi o troppe richieste al server.
