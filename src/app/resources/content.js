@@ -331,20 +331,20 @@ const about = {
         description: (
           <>
             <ul>
-              <li style={{ marginBottom: "0" }}>
+              <li>
                 Approccio proattivo all'apprendimento e allo sviluppo di{" "}
                 <strong>progetti web full-stack</strong>, utilizzando tecnologie
                 moderne e best practice per migliorare efficienza, scalabilità e
                 performance.
               </li>
-              <li style={{ marginBottom: "0" }}>
+              <li>
                 Creazione di <strong>interfacce intuitive e ottimizzate</strong>{" "}
                 per l&apos;utente, con particolare attenzione
                 all&apos;accessibilità, al design responsive e
                 all&apos;esperienza d&apos;uso, basata su analisi
                 comportamentali e dati reali.
               </li>
-              <li style={{ marginBottom: "0" }}>
+              <li>
                 Approfondimento su strategie avanzate di SEO tecnica,
                 copywriting persuasivo e content marketing per{" "}
                 <strong>
@@ -353,20 +353,20 @@ const about = {
                 </strong>
                 .
               </li>
-              <li style={{ marginBottom: "0" }}>
+              <li>
                 Applicazione di tecniche di <strong>prompt engineering</strong>{" "}
                 avanzate per ottimizzare l&apos;interazione con modelli di
                 intelligenza artificiale, migliorando la generazione di
                 contenuti, la produttività e l&apos;automazione di processi
                 complessi.
               </li>
-              <li style={{ marginBottom: "0" }}>
+              <li>
                 Sviluppo di <strong>strategie digitali</strong> basate su dati e
                 analytics, con focus su funnel di conversione, email marketing e
                 ottimizzazione delle performance per il raggiungimento degli
                 obiettivi di business.
               </li>
-              <li style={{ marginBottom: "0" }}>
+              <li>
                 <strong>Studio costante</strong> attraverso corsi,
                 documentazione tecnica, community di settore e sperimentazione
                 pratica, con focus su innovazione e trend emergenti.
