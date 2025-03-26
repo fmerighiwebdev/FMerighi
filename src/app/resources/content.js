@@ -384,8 +384,6 @@ const about = {
       {
         title: "HTML5, CSS3, JavaScript",
         header: (
-          <>
-            <Text variant="heading-strong-l">HTML5, CSS3 e JavaScript</Text>
             <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/html5.svg"
@@ -401,7 +399,6 @@ const about = {
               />
               <Image src="/icons/js.svg" alt="JS icon" width={60} height={60} />
             </Flex>
-          </>
         ),
         description: (
           <>
@@ -415,8 +412,6 @@ const about = {
       {
         title: "React e Next.js",
         header: (
-          <>
-            <Text variant="heading-strong-l">React e Next.js</Text>
             <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/react.svg"
@@ -431,7 +426,6 @@ const about = {
                 height={60}
               />
             </Flex>
-          </>
         ),
         description: (
           <>
@@ -445,8 +439,6 @@ const about = {
       {
         title: "Bootstrap e Tailwind",
         header: (
-          <>
-            <Text variant="heading-strong-l">Bootstrap e Tailwind</Text>
             <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/bootstrap.svg"
@@ -461,7 +453,6 @@ const about = {
                 height={60}
               />
             </Flex>
-          </>
         ),
         description: (
           <>
@@ -475,8 +466,6 @@ const about = {
       {
         title: "Node.js e Express.js",
         header: (
-          <>
-            <Text variant="heading-strong-l">Node.js e Express.js</Text>
             <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/node.svg"
@@ -485,7 +474,6 @@ const about = {
                 height={60}
               />
             </Flex>
-          </>
         ),
         description: (
           <>
@@ -499,8 +487,6 @@ const about = {
       {
         title: "Django e Flask",
         header: (
-          <>
-            <Text variant="heading-strong-l">Django e Flask</Text>
             <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/django.svg"
@@ -509,7 +495,6 @@ const about = {
                 height={60}
               />
             </Flex>
-          </>
         ),
         description: (
           <>
@@ -523,8 +508,6 @@ const about = {
       {
         title: "Database SQL e NoSQL",
         header: (
-          <>
-            <Text variant="heading-strong-l">Database SQL e NoSQL</Text>
             <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/postgresql.svg"
@@ -545,7 +528,6 @@ const about = {
                 height={60}
               />
             </Flex>
-          </>
         ),
         description: (
           <>
@@ -559,8 +541,6 @@ const about = {
       {
         title: "WordPress, Joomla e Shopify",
         header: (
-          <>
-            <Text variant="heading-strong-l">WordPress, Joomla e Shopify</Text>
             <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/wp.svg"
@@ -581,7 +561,6 @@ const about = {
                 height={60}
               />
             </Flex>
-          </>
         ),
         description: (
           <>
@@ -595,8 +574,6 @@ const about = {
       {
         title: "GIT e versioning",
         header: (
-          <>
-            <Text variant="heading-strong-l">GIT e versioning</Text>
             <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/git.svg"
@@ -605,7 +582,6 @@ const about = {
                 height={60}
               />
             </Flex>
-          </>
         ),
         description: (
           <>
@@ -619,10 +595,6 @@ const about = {
       {
         title: "Vari linguaggi di programmazione",
         header: (
-          <>
-            <Text variant="heading-strong-l">
-              Vari linguaggi di programmazione
-            </Text>
             <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/python.svg"
@@ -643,7 +615,6 @@ const about = {
                 height={60}
               />
             </Flex>
-          </>
         ),
         description: (
           <>
@@ -657,8 +628,6 @@ const about = {
       {
         title: "Figma e Photoshop",
         header: (
-          <>
-            <Text variant="heading-strong-l">Figma e Photoshop</Text>
             <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/figma.svg"
@@ -673,7 +642,6 @@ const about = {
                 height={60}
               />
             </Flex>
-          </>
         ),
         description: (
           <>
