@@ -358,24 +358,24 @@ const about = {
     title: "Skills",
     skills: [
       {
-        title: (
+        header: (
           <>
-          <Text variant="heading-strong-l">HTML5, CSS3 e JavaScript</Text>
-          <Flex gap="16" marginY="12">
-            <Image
-              src="/icons/html5.svg"
-              alt="HTML icon"
-              width={40}
-              height={50}
-            />
-            <Image
-              src="/icons/css3.svg"
-              alt="CSS icon"
-              width={40}
-              height={50}
-            />
-            <Image src="/icons/js.svg" alt="JS icon" width={50} height={50} />
-          </Flex>
+            <Text variant="heading-strong-l">HTML5, CSS3 e JavaScript</Text>
+            <Flex gap="16" marginTop="12" marginBottom="12">
+              <Image
+                src="/icons/html5.svg"
+                alt="HTML icon"
+                width={50}
+                height={60}
+              />
+              <Image
+                src="/icons/css3.svg"
+                alt="CSS icon"
+                width={50}
+                height={60}
+              />
+              <Image src="/icons/js.svg" alt="JS icon" width={60} height={60} />
+            </Flex>
           </>
         ),
         description: (
@@ -388,23 +388,23 @@ const about = {
         images: [],
       },
       {
-        title: (
+        header: (
           <>
-          <Text variant="heading-strong-l">React e Next.js</Text>
-          <Flex gap="16" marginY="12">
-            <Image
-              src="/icons/react.svg"
-              alt="React icon"
-              width={50}
-              height={50}
-            />
-            <Image
-              src="/icons/nextjs.svg"
-              alt="Next.js icon"
-              width={50}
-              height={50}
-            />
-          </Flex>
+            <Text variant="heading-strong-l">React e Next.js</Text>
+            <Flex gap="16" marginTop="12" marginBottom="12">
+              <Image
+                src="/icons/react.svg"
+                alt="React icon"
+                width={60}
+                height={60}
+              />
+              <Image
+                src="/icons/nextjs.svg"
+                alt="Next.js icon"
+                width={60}
+                height={60}
+              />
+            </Flex>
           </>
         ),
         description: (
@@ -417,23 +417,23 @@ const about = {
         images: [],
       },
       {
-        title: (
+        header: (
           <>
-          <Text variant="heading-strong-l">Bootstrap e Tailwind</Text>
-          <Flex gap="16" marginY="12">
-            <Image
-              src="/icons/bootstrap.svg"
-              alt="Bootstrap icon"
-              width={40}
-              height={50}
-            />
-            <Image
-              src="/icons/tailwind.svg"
-              alt="CSS icon"
-              width={40}
-              height={50}
-            />
-          </Flex>
+            <Text variant="heading-strong-l">Bootstrap e Tailwind</Text>
+            <Flex gap="16" marginTop="12" marginBottom="12">
+              <Image
+                src="/icons/bootstrap.svg"
+                alt="Bootstrap icon"
+                width={60}
+                height={60}
+              />
+              <Image
+                src="/icons/tailwind.svg"
+                alt="CSS icon"
+                width={60}
+                height={60}
+              />
+            </Flex>
           </>
         ),
         description: (
@@ -446,21 +446,15 @@ const about = {
         images: [],
       },
       {
-        title: (
+        header: (
           <>
             <Text variant="heading-strong-l">Node.js e Express.js</Text>
-            <Flex gap="16" marginY="12">
+            <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/node.svg"
                 alt="Node.js icon"
-                width={40}
-                height={50}
-              />
-              <Image
-                src="/icons/express.svg"
-                alt="Express.js icon"
-                width={70}
-                height={50}
+                width={60}
+                height={60}
               />
             </Flex>
           </>
@@ -475,21 +469,15 @@ const about = {
         images: [],
       },
       {
-        title: (
+        header: (
           <>
             <Text variant="heading-strong-l">Django e Flask</Text>
-            <Flex gap="16" marginY="12">
+            <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/django.svg"
                 alt="Django icon"
-                width={40}
-                height={50}
-              />
-              <Image
-                src="/icons/flask.svg"
-                alt="Flask icon"
-                width={50}
-                height={50}
+                width={60}
+                height={60}
               />
             </Flex>
           </>
@@ -504,27 +492,27 @@ const about = {
         images: [],
       },
       {
-        title: (
+        header: (
           <>
             <Text variant="heading-strong-l">Database SQL e NoSQL</Text>
-            <Flex gap="16" marginY="12">
+            <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/postgresql.svg"
                 alt="PostgreSQL icon"
-                width={50}
-                height={50}
+                width={60}
+                height={60}
               />
               <Image
                 src="/icons/mysql.svg"
                 alt="MySQL icon"
-                width={50}
-                height={50}
+                width={60}
+                height={60}
               />
               <Image
                 src="/icons/mongo.svg"
                 alt="MongoDB icon"
                 width={30}
-                height={50}
+                height={60}
               />
             </Flex>
           </>
@@ -539,27 +527,27 @@ const about = {
         images: [],
       },
       {
-        title: (
+        header: (
           <>
             <Text variant="heading-strong-l">WordPress, Joomla e Shopify</Text>
-            <Flex gap="16" marginY="12">
+            <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/wp.svg"
                 alt="WordPress icon"
-                width={50}
-                height={50}
+                width={60}
+                height={60}
               />
               <Image
                 src="/icons/joomla.svg"
                 alt="Joomla icon"
-                width={50}
-                height={50}
+                width={60}
+                height={60}
               />
               <Image
                 src="/icons/shopify.svg"
                 alt="JS icon"
-                width={40}
-                height={50}
+                width={60}
+                height={60}
               />
             </Flex>
           </>
@@ -574,15 +562,15 @@ const about = {
         images: [],
       },
       {
-        title: (
+        header: (
           <>
             <Text variant="heading-strong-l">GIT e versioning</Text>
-            <Flex gap="16" marginY="12">
+            <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/git.svg"
                 alt="GIT icon"
-                width={50}
-                height={50}
+                width={60}
+                height={60}
               />
             </Flex>
           </>
@@ -597,29 +585,29 @@ const about = {
         images: [],
       },
       {
-        title: (
+        header: (
           <>
             <Text variant="heading-strong-l">
               Vari linguaggi di programmazione
             </Text>
-            <Flex gap="16" marginY="12">
+            <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/python.svg"
                 alt="Python icon"
-                width={50}
-                height={50}
+                width={60}
+                height={60}
               />
               <Image
                 src="/icons/java.svg"
                 alt="Java icon"
-                width={40}
-                height={50}
+                width={60}
+                height={60}
               />
               <Image
                 src="/icons/php.svg"
                 alt="PHP icon"
-                width={50}
-                height={50}
+                width={60}
+                height={60}
               />
             </Flex>
           </>
@@ -634,21 +622,21 @@ const about = {
         images: [],
       },
       {
-        title: (
+        header: (
           <>
             <Text variant="heading-strong-l">Figma e Photoshop</Text>
-            <Flex gap="16" marginY="12">
+            <Flex gap="16" marginTop="12" marginBottom="12">
               <Image
                 src="/icons/figma.svg"
                 alt="Figma icon"
-                width={40}
-                height={50}
+                width={60}
+                height={60}
               />
               <Image
                 src="/icons/photoshop.svg"
                 alt="Photoshop icon"
-                width={40}
-                height={50}
+                width={60}
+                height={60}
               />
             </Flex>
           </>
