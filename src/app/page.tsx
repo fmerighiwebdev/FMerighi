@@ -355,7 +355,7 @@ export default function Home() {
               <Column fillWidth gap="l">
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text variant="heading-strong-l">{skill.title}</Text>
+                    {skill.title}
                     <Text variant="body-default-m" onBackground="neutral-weak">
                       {skill.description}
                     </Text>
