@@ -319,7 +319,7 @@ const about = {
     title: "Formazione",
     institutions: [
       {
-        name: "University of Verona",
+        name: "Università degli Studi di Verona",
         description: <>Laurea triennale in Scienze e Tecnologie Informatiche</>,
       },
       {
@@ -332,20 +332,44 @@ const about = {
           <>
             <ul>
               <li style={{ marginBottom: "0" }}>
-                Studio avanzato di <strong>tecnologie moderne</strong> e
-                sviluppo di progetti full-stack
+                Approccio proattivo all'apprendimento e allo sviluppo di{" "}
+                <strong>progetti web full-stack</strong>, utilizzando tecnologie
+                moderne e best practice per migliorare efficienza, scalabilità e
+                performance.
               </li>
               <li style={{ marginBottom: "0" }}>
-                Esperienza pratica con <strong>UI/UX design</strong> e
-                ottimizzazione dell'esperienza utente
+                Creazione di <strong>interfacce intuitive e ottimizzate</strong>{" "}
+                per l&apos;utente, con particolare attenzione
+                all&apos;accessibilità, al design responsive e
+                all&apos;esperienza d&apos;uso, basata su analisi
+                comportamentali e dati reali.
               </li>
               <li style={{ marginBottom: "0" }}>
-                Approfondimento su <strong>SEO</strong> e strategie di content
-                marketing
+                Approfondimento su strategie avanzate di SEO tecnica,
+                copywriting persuasivo e content marketing per{" "}
+                <strong>
+                  migliorare il posizionamento sui motori di ricerca e
+                  massimizzare il traffico organico
+                </strong>
+                .
               </li>
               <li style={{ marginBottom: "0" }}>
-                Formazione continua tramite{" "}
-                <strong>corsi e risorse online</strong>
+                Applicazione di tecniche di <strong>prompt engineering</strong>{" "}
+                avanzate per ottimizzare l&apos;interazione con modelli di
+                intelligenza artificiale, migliorando la generazione di
+                contenuti, la produttività e l&apos;automazione di processi
+                complessi.
+              </li>
+              <li style={{ marginBottom: "0" }}>
+                Sviluppo di <strong>strategie digitali</strong> basate su dati e
+                analytics, con focus su funnel di conversione, email marketing e
+                ottimizzazione delle performance per il raggiungimento degli
+                obiettivi di business.
+              </li>
+              <li style={{ marginBottom: "0" }}>
+                <strong>Studio costante</strong> attraverso corsi,
+                documentazione tecnica, community di settore e sperimentazione
+                pratica, con focus su innovazione e trend emergenti.
               </li>
             </ul>
           </>
@@ -358,6 +382,7 @@ const about = {
     title: "Skills",
     skills: [
       {
+        title: "HTML5, CSS3, JavaScript",
         header: (
           <>
             <Text variant="heading-strong-l">HTML5, CSS3 e JavaScript</Text>
@@ -388,6 +413,7 @@ const about = {
         images: [],
       },
       {
+        title: "React e Next.js",
         header: (
           <>
             <Text variant="heading-strong-l">React e Next.js</Text>
@@ -417,6 +443,7 @@ const about = {
         images: [],
       },
       {
+        title: "Bootstrap e Tailwind",
         header: (
           <>
             <Text variant="heading-strong-l">Bootstrap e Tailwind</Text>
@@ -446,6 +473,7 @@ const about = {
         images: [],
       },
       {
+        title: "Node.js e Express.js",
         header: (
           <>
             <Text variant="heading-strong-l">Node.js e Express.js</Text>
@@ -469,6 +497,7 @@ const about = {
         images: [],
       },
       {
+        title: "Django e Flask",
         header: (
           <>
             <Text variant="heading-strong-l">Django e Flask</Text>
@@ -492,6 +521,7 @@ const about = {
         images: [],
       },
       {
+        title: "Database SQL e NoSQL",
         header: (
           <>
             <Text variant="heading-strong-l">Database SQL e NoSQL</Text>
@@ -527,6 +557,7 @@ const about = {
         images: [],
       },
       {
+        title: "WordPress, Joomla e Shopify",
         header: (
           <>
             <Text variant="heading-strong-l">WordPress, Joomla e Shopify</Text>
@@ -562,6 +593,7 @@ const about = {
         images: [],
       },
       {
+        title: "GIT e versioning",
         header: (
           <>
             <Text variant="heading-strong-l">GIT e versioning</Text>
@@ -585,6 +617,7 @@ const about = {
         images: [],
       },
       {
+        title: "Vari linguaggi di programmazione",
         header: (
           <>
             <Text variant="heading-strong-l">
@@ -622,6 +655,7 @@ const about = {
         images: [],
       },
       {
+        title: "Figma e Photoshop",
         header: (
           <>
             <Text variant="heading-strong-l">Figma e Photoshop</Text>
